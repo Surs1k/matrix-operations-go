@@ -1,0 +1,166 @@
+\doxysection{Date Class Reference}
+\hypertarget{class_date}{}\label{class_date}\index{Date@{Date}}
+
+
+Represents a date with year, month, and day.  
+
+
+
+
+{\ttfamily \#include $<$class.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_date_a5874432b5f7339205866055201e885d7}{Date}} (int year, int month, int day)
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{class_date}{Date} class. \end{DoxyCompactList}\item 
+\Hypertarget{class_date_ade4b469433b7966cc034cbcc6799233b}\label{class_date_ade4b469433b7966cc034cbcc6799233b} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Date} ()
+\begin{DoxyCompactList}\small\item\em Destructor for \doxylink{class_date}{Date} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_date_a0689685edefc12c10cf1984d891adf77}{print}} (char separator) const
+\begin{DoxyCompactList}\small\item\em Prints the date in a specific format. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_date_a895c4ae9868e43577cf59d9c679d7a71}{set\+Year}} (int year)
+\begin{DoxyCompactList}\small\item\em Sets the year of the date. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_date_a23aa56014dd581d691607df5d4474f64}{set\+Month}} (int month)
+\begin{DoxyCompactList}\small\item\em Sets the month of the date. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_date_a2f97b9d1ac5ef0ef6b6cab3335c5303d}{set\+Day}} (int day)
+\begin{DoxyCompactList}\small\item\em Sets the day of the date. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_date_a8b0869f34c2b38d108ab83ee2e770e5d}{get\+Year}} () const
+\begin{DoxyCompactList}\small\item\em Gets the year of the date. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_date_a332f6e3a2f6a40d73742b6dab7be0f64}{get\+Month}} () const
+\begin{DoxyCompactList}\small\item\em Gets the month of the date. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_date_a0f253815240e70f4c39cb93cc68bd3f4}{get\+Day}} () const
+\begin{DoxyCompactList}\small\item\em Gets the day of the date. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a date with year, month, and day. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_date_a5874432b5f7339205866055201e885d7}\index{Date@{Date}!Date@{Date}}
+\index{Date@{Date}!Date@{Date}}
+\doxysubsubsection{\texorpdfstring{Date()}{Date()}}
+{\footnotesize\ttfamily \label{class_date_a5874432b5f7339205866055201e885d7} 
+Date\+::\+Date (\begin{DoxyParamCaption}\item[{int}]{year}{, }\item[{int}]{month}{, }\item[{int}]{day}{}\end{DoxyParamCaption})}
+
+
+
+Constructor for \doxylink{class_date}{Date} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em year} & Year of the date. \\
+\hline
+{\em month} & Month of the date. \\
+\hline
+{\em day} & Day of the date. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_date_a0f253815240e70f4c39cb93cc68bd3f4}\index{Date@{Date}!getDay@{getDay}}
+\index{getDay@{getDay}!Date@{Date}}
+\doxysubsubsection{\texorpdfstring{getDay()}{getDay()}}
+{\footnotesize\ttfamily \label{class_date_a0f253815240e70f4c39cb93cc68bd3f4} 
+int Date\+::get\+Day (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the day of the date. 
+
+\begin{DoxyReturn}{Returns}
+Current day value. 
+\end{DoxyReturn}
+\Hypertarget{class_date_a332f6e3a2f6a40d73742b6dab7be0f64}\index{Date@{Date}!getMonth@{getMonth}}
+\index{getMonth@{getMonth}!Date@{Date}}
+\doxysubsubsection{\texorpdfstring{getMonth()}{getMonth()}}
+{\footnotesize\ttfamily \label{class_date_a332f6e3a2f6a40d73742b6dab7be0f64} 
+int Date\+::get\+Month (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the month of the date. 
+
+\begin{DoxyReturn}{Returns}
+Current month value. 
+\end{DoxyReturn}
+\Hypertarget{class_date_a8b0869f34c2b38d108ab83ee2e770e5d}\index{Date@{Date}!getYear@{getYear}}
+\index{getYear@{getYear}!Date@{Date}}
+\doxysubsubsection{\texorpdfstring{getYear()}{getYear()}}
+{\footnotesize\ttfamily \label{class_date_a8b0869f34c2b38d108ab83ee2e770e5d} 
+int Date\+::get\+Year (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the year of the date. 
+
+\begin{DoxyReturn}{Returns}
+Current year value. 
+\end{DoxyReturn}
+\Hypertarget{class_date_a0689685edefc12c10cf1984d891adf77}\index{Date@{Date}!print@{print}}
+\index{print@{print}!Date@{Date}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily \label{class_date_a0689685edefc12c10cf1984d891adf77} 
+void Date\+::print (\begin{DoxyParamCaption}\item[{char}]{separator}{}\end{DoxyParamCaption}) const}
+
+
+
+Prints the date in a specific format. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em separator} & Separator character to use in the output. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_date_a2f97b9d1ac5ef0ef6b6cab3335c5303d}\index{Date@{Date}!setDay@{setDay}}
+\index{setDay@{setDay}!Date@{Date}}
+\doxysubsubsection{\texorpdfstring{setDay()}{setDay()}}
+{\footnotesize\ttfamily \label{class_date_a2f97b9d1ac5ef0ef6b6cab3335c5303d} 
+void Date\+::set\+Day (\begin{DoxyParamCaption}\item[{int}]{day}{}\end{DoxyParamCaption})}
+
+
+
+Sets the day of the date. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em day} & New day value to set. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_date_a23aa56014dd581d691607df5d4474f64}\index{Date@{Date}!setMonth@{setMonth}}
+\index{setMonth@{setMonth}!Date@{Date}}
+\doxysubsubsection{\texorpdfstring{setMonth()}{setMonth()}}
+{\footnotesize\ttfamily \label{class_date_a23aa56014dd581d691607df5d4474f64} 
+void Date\+::set\+Month (\begin{DoxyParamCaption}\item[{int}]{month}{}\end{DoxyParamCaption})}
+
+
+
+Sets the month of the date. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em month} & New month value to set. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_date_a895c4ae9868e43577cf59d9c679d7a71}\index{Date@{Date}!setYear@{setYear}}
+\index{setYear@{setYear}!Date@{Date}}
+\doxysubsubsection{\texorpdfstring{setYear()}{setYear()}}
+{\footnotesize\ttfamily \label{class_date_a895c4ae9868e43577cf59d9c679d7a71} 
+void Date\+::set\+Year (\begin{DoxyParamCaption}\item[{int}]{year}{}\end{DoxyParamCaption})}
+
+
+
+Sets the year of the date. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em year} & New year value to set. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+lib/include/class.\+h\item 
+lib/src/class.\+cpp\end{DoxyCompactItemize}
