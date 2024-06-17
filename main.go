@@ -4,8 +4,10 @@ import (
 	"fmt"
 )
 
+// Matrix4x4 represents a 4x4 matrix
 type Matrix4x4 [4][4]int
 
+// Add performs matrix addition
 func (m1 Matrix4x4) Add(m2 Matrix4x4) Matrix4x4 {
 	var result Matrix4x4
 	for i := 0; i < 4; i++ {
@@ -16,6 +18,7 @@ func (m1 Matrix4x4) Add(m2 Matrix4x4) Matrix4x4 {
 	return result
 }
 
+// Subtract performs matrix subtraction
 func (m1 Matrix4x4) Subtract(m2 Matrix4x4) Matrix4x4 {
 	var result Matrix4x4
 	for i := 0; i < 4; i++ {
@@ -26,10 +29,11 @@ func (m1 Matrix4x4) Subtract(m2 Matrix4x4) Matrix4x4 {
 	return result
 }
 
+// Multiply performs matrix multiplication
 func (m1 Matrix4x4) Multiply(m2 Matrix4x4) Matrix4x4 {
 	var result Matrix4x4
 	for i := 0; i < 4; i++ {
-		for j := 0; i < 4; j++ {
+		for j := 0; j < 4; j++ {
 			sum := 0
 			for k := 0; k < 4; k++ {
 				sum += m1[i][k] * m2[k][j]
@@ -40,6 +44,17 @@ func (m1 Matrix4x4) Multiply(m2 Matrix4x4) Matrix4x4 {
 	return result
 }
 
+func (m Matrix4x4) Transpose() Matrix4x4 {
+	var result Matrix4x4
+	for i := 0; i < 4; i++ {
+		for j := 0; j < 4; j++ {
+			result[i][j] = m[j][i]
+		}
+	}
+	return result
+}
+
+// Print prints the matrix
 func (m Matrix4x4) Print() {
 	for i := 0; i < 4; i++ {
 		for j := 0; j < 4; j++ {
@@ -81,4 +96,8 @@ func main() {
 	fmt.Println("Multiplication:")
 	resultMultiply := m1.Multiply(m2)
 	resultMultiply.Print()
+
+	fmt.Println("Transpose of Matrix 1:")
+	resultTranspose := m1.Transpose()
+	resultTranspose.Print()
 }
