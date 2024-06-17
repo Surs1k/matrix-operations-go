@@ -44,6 +44,16 @@ func (m1 Matrix4x4) Multiply(m2 Matrix4x4) Matrix4x4 {
 	return result
 }
 
+func (m Matrix4x4) ScalarMultiply(scalar int) Matrix4x4 {
+	var result Matrix4x4
+	for i := 0; i < 4; i++ {
+		for j := 0; j < 4; j++ {
+			result[i][j] = m[i][j] * scalar
+		}
+	}
+	return result
+}
+
 func (m Matrix4x4) Transpose() Matrix4x4 {
 	var result Matrix4x4
 	for i := 0; i < 4; i++ {
@@ -100,4 +110,8 @@ func main() {
 	fmt.Println("Transpose of Matrix 1:")
 	resultTranspose := m1.Transpose()
 	resultTranspose.Print()
+
+	fmt.Println("Scalar Multiplication of Matrix 1 by 2:")
+	resultScalarMultiply := m1.ScalarMultiply(2)
+	resultScalarMultiply.Print()
 }
