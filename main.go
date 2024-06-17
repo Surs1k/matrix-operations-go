@@ -8,7 +8,9 @@ import (
 type Matrix4x4 [4][4]int
 
 // Add performs matrix addition
+// Add adds two matrices and returns the result
 func (m1 Matrix4x4) Add(m2 Matrix4x4) Matrix4x4 {
+	// implementation
 	var result Matrix4x4
 	for i := 0; i < 4; i++ {
 		for j := 0; j < 4; j++ {
